@@ -1,0 +1,47 @@
+/* the-missing-value site */
+
+body {
+  background-color: #000000;
+  color: #C0C0C0;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  background-color: #C0C0C0;
+  inline-size: 100%;
+  margin: 2.5vh 0 2.5vh 0;
+}
+
+nav {
+  align-items: center;
+  block-size: 40px;
+  display: flex;
+  inline-size: 100vw;
+}
+
+#flexContainerAbout {
+  align-items: center;
+  block-size: calc(100vh - 40px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  inline-size: 100vw;
+}
+
+#flexContainerDocumentation {
+  display: flex;
+}
+
+#sidebar {
+  align-items: start;
+  block-size: calc(100vh - 40px);
+  display: flex;
+  flex-direction: column;
+  inline-size: 120px;
+  margin-inline-start: 1.5vw;
+}
+
+.function {
+  padding: 7.5vh 4.5vw 7.5vh 4.5vw;
+}
