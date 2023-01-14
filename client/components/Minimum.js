@@ -5,24 +5,76 @@ import Typography from '@mui/material/Typography';
 const Minimum = () => {
   return (
     <>
-      <Typography variant='h5' component='h2'>minimum</Typography>
-      <Typography variant='h6' sx={{margin: '1.5vh 0 1.5vh 0'}} component='h3'>description:</Typography>
-      <Typography sx={{margin: '0 1.5vw 0 1.5vw'}} variant='body1'>
+      <Typography 
+        variant='h1' 
+        component='h1' 
+        sx={{fontSize: 'clamp(1.25em, 1.25em + 3vw, 3em)'}}
+      >
+        the-missing-value
+      </Typography>
+      <Typography 
+        variant='h5' 
+        component='h2'
+        sx={{margin: '1.5vh 0 0 1.5vw'}}
+      >
+        the minimum function
+      </Typography>
+      <Typography 
+        variant='h6' 
+        component='h3' 
+        sx={{margin: '1.5vh 0 1.5vh 3vw'}}
+      >
+        description:
+      </Typography>
+      <Typography 
+        variant='body1' 
+        sx={{margin: '0 1.5vw 0 4.5vw'}}
+      >
         function that returns the minimum value in the dataset
       </Typography>
-      <Typography variant='h6' sx={{margin: '1.5vh 0 1.5vh 0'}} component='h3'>syntax:</Typography>
-      <Typography sx={{margin: '0 1.5vw 0 1.5vw'}} variant='body1'>
+      <Typography 
+        variant='h6' 
+        component='h3' 
+        sx={{margin: '1.5vh 0 1.5vh 3vw'}}
+      >
+        syntax:
+      </Typography>
+      <Typography 
+        variant='body1' 
+        sx={{margin: '0 1.5vw 0 4.5vw'}}
+      >
         minimum(values, rmNull = false)
       </Typography>
-      <Typography variant='h6' sx={{margin: '1.5vh 0 1.5vh 0'}} component='h3'>parameters:</Typography>
-      <Typography sx={{margin: '0 1.5vw 0 1.5vw'}} variant='body1'>
+      <Typography 
+        variant='h6' 
+        component='h3' 
+        sx={{margin: '1.5vh 0 1.5vh 3vw'}}
+      >
+        parameters:
+      </Typography>
+      <Typography 
+        variant='body1' 
+        sx={{margin: '0 1.5vw 0 4.5vw'}}
+      >
         values - an array of values
       </Typography>
-      <Typography sx={{margin: '0 1.5vw 0 1.5vw'}} variant='body1'>
+      <Typography 
+        variant='body1' 
+        sx={{margin: '0 1.5vw 0 4.5vw'}}
+      >
         rmNull - an optional argument for removing null values
       </Typography>
-      <Typography variant='h6' sx={{margin: '1.5vh 0 1.5vh 0'}} component='h3'>return value:</Typography>
-      <Typography sx={{margin: '0 1.5vw 0 1.5vw'}} variant='body1'>
+      <Typography 
+        variant='h6' 
+        component='h3' 
+        sx={{margin: '1.5vh 0 1.5vh 3vw'}}
+      >
+        return value:
+      </Typography>
+      <Typography 
+        variant='body1' 
+        sx={{margin: '0 1.5vw 0 4.5vw'}}
+      >
         a single value of type number or NaN
       </Typography>
     </>

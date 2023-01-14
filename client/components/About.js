@@ -4,12 +4,19 @@ import Typography from '@mui/material/Typography';
 
 const About = () => {
   return (
-    <main id='flexContainerAbout'>
-      <Typography variant='h1' component='h1' sx={{fontSize: 'clamp(1.25em, 1.25em + 3vw, 3em)'}}>
+    <main>
+      <Typography 
+        variant='h1' 
+        component='h1' 
+        sx={{fontSize: 'clamp(1.25em, 1.25em + 3vw, 3em)', margin: '80px 1.5vw 0 1.5vw'}}
+      >
         the-missing-value
       </Typography>
-      <Typography variant='body1' sx={{margin: '3vh 1.5vw 3vh 1.5vw', textAlign: 'center'}}>
-        A JavaScript library for performing statistics with optional removal of missing values...
+      <Typography 
+        variant='body1'
+        sx={{margin: '1.5vh 1.5vw 0 1.5vw'}}
+      >
+        A JavaScript library for descriptive statistics with optional removal of missing values...
       </Typography>
     </main>
   );
