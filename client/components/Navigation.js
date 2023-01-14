@@ -6,7 +6,7 @@ import AppBar from '@mui/material/AppBar';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import ToolBar from '@mui/material/ToolBar';
+import Toolbar from '@mui/material/Toolbar';
 import Link from '@mui/material/Link';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
@@ -28,7 +28,7 @@ const Navigation = () => {
           position='fixed' 
           sx={{backgroundColor: '#0D0D0D', zIndex: (theme) => theme.zIndex.drawer + 1}}
         >
-          <ToolBar>
+          <Toolbar>
             <IconButton 
               edge='start' 
               onClick={handleDrawerOpenClose} 
@@ -36,7 +36,7 @@ const Navigation = () => {
             >
               <MenuIcon />
             </IconButton>
-          </ToolBar>
+          </Toolbar>
         </AppBar>
       </Box>
       <Drawer 
@@ -44,7 +44,7 @@ const Navigation = () => {
         open={open} 
         PaperProps={{sx:{backgroundColor: '#0D0D0D'}}}
       >
-        <ToolBar />
+        <Toolbar />
         <Box sx={{backgroundColor: '#0D0D0D', color: '#C0C0C0', padding: '0 1.5vw 0 1.5vw'}}>
           <Link 
             to='/'
