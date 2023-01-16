@@ -3813,6 +3813,29 @@ function useSlotProps(parameters) {
 
 /***/ }),
 
+/***/ "./node_modules/@mui/icons-material/ChevronLeft.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/@mui/icons-material/ChevronLeft.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@mui/icons-material/utils/createSvgIcon.js"));
+var _jsxRuntime = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _default = (0, _createSvgIcon.default)( /*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
+  d: "M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+}), 'ChevronLeft');
+exports["default"] = _default;
+
+/***/ }),
+
 /***/ "./node_modules/@mui/icons-material/Menu.js":
 /*!**************************************************!*\
   !*** ./node_modules/@mui/icons-material/Menu.js ***!
@@ -17572,15 +17595,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
 /* harmony import */ var _mui_material_AppBar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material/AppBar */ "./node_modules/@mui/material/AppBar/AppBar.js");
 /* harmony import */ var _mui_material_Drawer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/material/Drawer */ "./node_modules/@mui/material/Drawer/Drawer.js");
 /* harmony import */ var _mui_material_IconButton__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material/IconButton */ "./node_modules/@mui/material/IconButton/IconButton.js");
 /* harmony import */ var _mui_icons_material_Menu__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/icons-material/Menu */ "./node_modules/@mui/icons-material/Menu.js");
 /* harmony import */ var _mui_material_Toolbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material/Toolbar */ "./node_modules/@mui/material/Toolbar/Toolbar.js");
-/* harmony import */ var _mui_material_Link__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/material/Link */ "./node_modules/@mui/material/Link/Link.js");
-/* harmony import */ var _mui_material_Typography__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @mui/material/Typography */ "./node_modules/@mui/material/Typography/Typography.js");
+/* harmony import */ var _mui_material_Link__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/material/Link */ "./node_modules/@mui/material/Link/Link.js");
+/* harmony import */ var _mui_material_Typography__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @mui/material/Typography */ "./node_modules/@mui/material/Typography/Typography.js");
+/* harmony import */ var _mui_icons_material_ChevronLeft__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/icons-material/ChevronLeft */ "./node_modules/@mui/icons-material/ChevronLeft.js");
+
 
 
 
@@ -17596,8 +17621,11 @@ __webpack_require__.r(__webpack_exports__);
 
 const Navigation = () => {
   const [open, setOpen] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
-  const handleDrawerOpenClose = () => {
-    setOpen(!open);
+  const handleDrawerOpen = () => {
+    setOpen(true);
+  };
+  const handleDrawerClose = () => {
+    setOpen(false);
   };
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], {
     sx: {
@@ -17611,7 +17639,7 @@ const Navigation = () => {
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Toolbar__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_IconButton__WEBPACK_IMPORTED_MODULE_4__["default"], {
     edge: "start",
-    onClick: handleDrawerOpenClose,
+    onClick: handleDrawerOpen,
     sx: {
       color: '#C0C0C0'
     }
@@ -17629,69 +17657,78 @@ const Navigation = () => {
       color: '#C0C0C0',
       padding: '0 1.5vw 0 1.5vw'
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Link__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_IconButton__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    onClick: handleDrawerClose,
+    sx: {
+      color: '#C0C0C0',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'flex-end',
+      inlineSize: '100%'
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_icons_material_ChevronLeft__WEBPACK_IMPORTED_MODULE_7__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Link__WEBPACK_IMPORTED_MODULE_8__["default"], {
     to: "/",
-    component: react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Link,
+    component: react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Link,
     sx: {
       color: '#4D73FF',
       display: 'block',
       margin: '1.5vh 1.5vw 1.5vh 0',
       textDecoration: 'none'
     }
-  }, "ABOUT"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], {
+  }, "ABOUT"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_10__["default"], {
     variant: "body1",
     sx: {
       marginBlockStart: '1.5vh',
       marginBlockEnd: '1.5vh'
     }
-  }, "FUNCTIONS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Link__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, "FUNCTIONS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Link__WEBPACK_IMPORTED_MODULE_8__["default"], {
     to: "/documentation/count",
-    component: react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Link,
+    component: react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Link,
     sx: {
       color: '#4D73FF',
       display: 'block',
       margin: '0 1.5vw 1.5vh 1.5vw',
       textDecoration: 'none'
     }
-  }, "COUNT"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Link__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, "COUNT"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Link__WEBPACK_IMPORTED_MODULE_8__["default"], {
     to: "/documentation/minimum",
-    component: react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Link,
+    component: react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Link,
     sx: {
       color: '#4D73FF',
       display: 'block',
       margin: '0 1.5vw 1.5vh 1.5vw',
       textDecoration: 'none'
     }
-  }, "MINIMUM"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Link__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, "MINIMUM"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Link__WEBPACK_IMPORTED_MODULE_8__["default"], {
     to: "/documentation/maximum",
-    component: react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Link,
+    component: react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Link,
     sx: {
       color: '#4D73FF',
       display: 'block',
       margin: '0 1.5vw 1.5vh 1.5vw',
       textDecoration: 'none'
     }
-  }, "MAXIMUM"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Link__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, "MAXIMUM"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Link__WEBPACK_IMPORTED_MODULE_8__["default"], {
     to: "/documentation/mean",
-    component: react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Link,
+    component: react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Link,
     sx: {
       color: '#4D73FF',
       display: 'block',
       margin: '0 1.5vw 1.5vh 1.5vw',
       textDecoration: 'none'
     }
-  }, "MEAN"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Link__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, "MEAN"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Link__WEBPACK_IMPORTED_MODULE_8__["default"], {
     to: "/documentation/stDev",
-    component: react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Link,
+    component: react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Link,
     sx: {
       color: '#4D73FF',
       display: 'block',
       margin: '0 1.5vw 1.5vh 1.5vw',
       textDecoration: 'none'
     }
-  }, "ST DEV"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Link__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, "ST DEV"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Link__WEBPACK_IMPORTED_MODULE_8__["default"], {
     to: "/documentation/sum",
-    component: react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Link,
+    component: react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Link,
     sx: {
       color: '#4D73FF',
       display: 'block',
