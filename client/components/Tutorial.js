@@ -35,7 +35,7 @@ const Tutorial = () => {
         variant='body1'
         sx={{margin: '1.5vh 1.5vw 1.5vh 4.5vw', maxInlineSize: '65ch'}}
       >
-        The functions accept an array of values as the first 
+        The functions accept an array as the first 
         argument and have a second optional argument, rmNull,
         which has a default value of false.
       </Typography>
@@ -52,7 +52,7 @@ const Tutorial = () => {
         When the rmNull argument is false, the function will
         return NaN if the array of values passed in as the first
         argument contains a null value. By setting rmNull to true,
-        null values are removed and the calculated value is returned.
+        null values are not included and the calculated value is returned.
       </Typography>
       <Typography
         variant='body1'
