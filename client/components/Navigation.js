@@ -12,13 +12,18 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import Typography from '@mui/material/Typography';
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 
 const Navigation = () => {
 
   const [ open, setOpen ] = useState(false);
 
-  const handleDrawerOpenClose = () => {
-    setOpen(!open);
+  const handleDrawerOpen = () => {
+    setOpen(true);
+  };
+
+  const handleDrawerClose = () => {
+    setOpen(false);
   };
 
   return (
@@ -31,7 +36,7 @@ const Navigation = () => {
           <Toolbar>
             <IconButton 
               edge='start' 
-              onClick={handleDrawerOpenClose} 
+              onClick={handleDrawerOpen} 
               sx={{color: '#C0C0C0'}}
             >
               <MenuIcon />
@@ -46,6 +51,12 @@ const Navigation = () => {
       >
         <Toolbar />
         <Box sx={{backgroundColor: '#0D0D0D', color: '#C0C0C0', padding: '0 1.5vw 0 1.5vw'}}>
+          <IconButton
+            onClick={handleDrawerClose}
+            sx={{color: '#C0C0C0', display: 'flex', alignItems: 'center', justifyContent: 'flex-end', inlineSize: '100%'}}
+          >
+            <ChevronLeftIcon />
+          </IconButton>
           <Link 
             to='/'
             component={RouterLink} 
