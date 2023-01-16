@@ -17964,7 +17964,7 @@ const Tutorial = () => {
       margin: '1.5vh 1.5vw 1.5vh 4.5vw',
       maxInlineSize: '65ch'
     }
-  }, "The functions accept an array of values as the first argument and have a second optional argument, rmNull, which has a default value of false."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, "The functions accept an array as the first argument and have a second optional argument, rmNull, which has a default value of false."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_1__["default"], {
     variant: "body1",
     sx: {
       margin: '1.5vh 1.5vw 1.5vh 6vw'
@@ -17975,7 +17975,7 @@ const Tutorial = () => {
       margin: '1.5vh 1.5vw 1.5vh 4.5vw',
       maxInlineSize: '65ch'
     }
-  }, "When the rmNull argument is false, the function will return NaN if the array of values passed in as the first argument contains a null value. By setting rmNull to true, null values are removed and the calculated value is returned."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, "When the rmNull argument is false, the function will return NaN if the array of values passed in as the first argument contains a null value. By setting rmNull to true, null values are not included and the calculated value is returned."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_1__["default"], {
     variant: "body1",
     sx: {
       margin: '1.5vh 1.5vw 1.5vh 4.5vw'
