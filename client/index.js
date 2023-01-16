@@ -12,6 +12,7 @@ import Maximum from './components/Maximum';
 import Mean from './components/Mean';
 import StDev from './components/StDev';
 import Sum from './components/Sum';
+import Tutorial from './components/Tutorial';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Navigation />
       <Routes>
         <Route path='/' element={<About />} />
+        <Route path='/tutorial' element={<Tutorial />} />
         <Route path='/documentation' element={<Documentation />}>
           <Route path='count' element={<Count />} />
           <Route path='minimum' element={<Minimum />} />

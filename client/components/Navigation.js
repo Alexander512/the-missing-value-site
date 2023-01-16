@@ -64,6 +64,13 @@ const Navigation = () => {
           >
             ABOUT
           </Link>
+          <Link 
+            to='/tutorial'
+            component={RouterLink} 
+            sx={{color: '#4D73FF', display: 'block', margin: '1.5vh 1.5vw 1.5vh 0', textDecoration: 'none'}}
+          >
+            TUTORIAL
+          </Link>
           <Typography 
             variant='body1' 
             sx={{marginBlockStart: '1.5vh', marginBlockEnd: '1.5vh'}}

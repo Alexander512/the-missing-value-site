@@ -17675,7 +17675,16 @@ const Navigation = () => {
       margin: '1.5vh 1.5vw 1.5vh 0',
       textDecoration: 'none'
     }
-  }, "ABOUT"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_10__["default"], {
+  }, "ABOUT"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Link__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    to: "/tutorial",
+    component: react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Link,
+    sx: {
+      color: '#4D73FF',
+      display: 'block',
+      margin: '1.5vh 1.5vw 1.5vh 0',
+      textDecoration: 'none'
+    }
+  }, "TUTORIAL"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_10__["default"], {
     variant: "body1",
     sx: {
       marginBlockStart: '1.5vh',
@@ -17906,6 +17915,104 @@ const Sum = () => {
   }, "a single value of type number or NaN"));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Sum);
+
+/***/ }),
+
+/***/ "./client/components/Tutorial.js":
+/*!***************************************!*\
+  !*** ./client/components/Tutorial.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _mui_material_Typography__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/material/Typography */ "./node_modules/@mui/material/Typography/Typography.js");
+
+
+const Tutorial = () => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    variant: "h1",
+    component: "h1",
+    sx: {
+      fontSize: 'clamp(1.25em, 1.25em + 3vw, 3em)',
+      margin: '80px 1.5vw 0 1.5vw'
+    }
+  }, "the-missing-value"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    variant: "h5",
+    component: "h2",
+    sx: {
+      margin: '1.5vh 0 1.5vh 3vw'
+    }
+  }, "Tutorial"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    variant: "body1",
+    sx: {
+      margin: '1.5vh 1.5vw 1.5vh 4.5vw'
+    }
+  }, "Destructure the necessary functions from the library..."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    variant: "body1",
+    sx: {
+      margin: '1.5vh 1.5vw 1.5vh 6vw'
+    }
+  }, `const { mean } = require('the-missing-value.js');`), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    variant: "body1",
+    sx: {
+      margin: '1.5vh 1.5vw 1.5vh 4.5vw',
+      maxInlineSize: '65ch'
+    }
+  }, "The functions accept an array of values as the first argument and have a second optional argument, rmNull, which has a default value of false."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    variant: "body1",
+    sx: {
+      margin: '1.5vh 1.5vw 1.5vh 6vw'
+    }
+  }, "mean(values, rmNull = false)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    variant: "body1",
+    sx: {
+      margin: '1.5vh 1.5vw 1.5vh 4.5vw',
+      maxInlineSize: '65ch'
+    }
+  }, "When the rmNull argument is false, the function will return NaN if the array of values passed in as the first argument contains a null value. By setting rmNull to true, null values are removed and the calculated value is returned."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    variant: "body1",
+    sx: {
+      margin: '1.5vh 1.5vw 1.5vh 4.5vw'
+    }
+  }, "Using the following array as an example:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    variant: "body1",
+    sx: {
+      margin: '1.5vh 1.5vw 1.5vh 6vw'
+    }
+  }, "> const intArray = [ 1, 2, 3, 4, 5 ];"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    variant: "body1",
+    sx: {
+      margin: '1.5vh 1.5vw 1.5vh 6vw'
+    }
+  }, "> mean(intArray); // returns 3"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    variant: "body1",
+    sx: {
+      margin: '1.5vh 1.5vw 1.5vh 4.5vw'
+    }
+  }, "If a missing value is included in the array:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    variant: "body1",
+    sx: {
+      margin: '1.5vh 1.5vw 1.5vh 6vw'
+    }
+  }, "> const intMissing = [ 1, 2, null, 4, 5 ];"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    variant: "body1",
+    sx: {
+      margin: '1.5vh 1.5vw 1.5vh 6vw'
+    }
+  }, "> mean(intMissing); // returns NaN"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    variant: "body1",
+    sx: {
+      margin: '1.5vh 1.5vw 1.5vh 6vw'
+    }
+  }, "> mean(intMissing, rmNull = true); // returns 3"));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Tutorial);
 
 /***/ }),
 
@@ -59181,8 +59288,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _components_About__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/About */ "./client/components/About.js");
 /* harmony import */ var _components_Documentation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Documentation */ "./client/components/Documentation.js");
 /* harmony import */ var _components_Navigation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Navigation */ "./client/components/Navigation.js");
@@ -59192,6 +59299,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Mean__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/Mean */ "./client/components/Mean.js");
 /* harmony import */ var _components_StDev__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/StDev */ "./client/components/StDev.js");
 /* harmony import */ var _components_Sum__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/Sum */ "./client/components/Sum.js");
+/* harmony import */ var _components_Tutorial__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/Tutorial */ "./client/components/Tutorial.js");
+
 
 
 
@@ -59205,35 +59314,38 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const App = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Navigation__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Navigation__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Route, {
     path: "/",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_About__WEBPACK_IMPORTED_MODULE_2__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Route, {
+    path: "/tutorial",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Tutorial__WEBPACK_IMPORTED_MODULE_11__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Route, {
     path: "/documentation",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Documentation__WEBPACK_IMPORTED_MODULE_3__["default"], null)
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Route, {
     path: "count",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Count__WEBPACK_IMPORTED_MODULE_5__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Route, {
     path: "minimum",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Minimum__WEBPACK_IMPORTED_MODULE_6__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Route, {
     path: "maximum",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Maximum__WEBPACK_IMPORTED_MODULE_7__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Route, {
     path: "mean",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Mean__WEBPACK_IMPORTED_MODULE_8__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Route, {
     path: "stdev",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_StDev__WEBPACK_IMPORTED_MODULE_9__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Route, {
     path: "sum",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Sum__WEBPACK_IMPORTED_MODULE_10__["default"], null)
   }))));
 };
 const container = document.getElementById('root');
 const root = react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot(container);
-root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(App, null)));
+root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(App, null)));
 })();
 
 /******/ })()
