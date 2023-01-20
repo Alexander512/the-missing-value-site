@@ -119,6 +119,27 @@ const Navigation = () => {
           >
             SUM
           </Link> 
+          <Link
+            to='/documentation/quantile'
+            component={RouterLink}
+            sx={{color: '#4D73FF', display: 'block', margin: '0 1.5vw 1.5vh 1.5vw', textDecoration: 'none'}}
+          >
+            QUANTILE
+          </Link>
+          <Link
+            to='/documentation/median'
+            component={RouterLink}
+            sx={{color: '#4D73FF', display: 'block', margin: '0 1.5vw 1.5vh 1.5vw', textDecoration: 'none'}}
+          >
+            MEDIAN
+          </Link>
+          <Link
+            to='/documentation/interquartileRange'
+            component={RouterLink}
+            sx={{color: '#4D73FF', display: 'block', margin: '0 1.5vw 1.5vh 1.5vw', textDecoration: 'none'}}
+          >
+            IQR
+          </Link>
         </Box>
       </Drawer>
     </>
